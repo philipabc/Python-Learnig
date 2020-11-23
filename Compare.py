@@ -1,6 +1,4 @@
 def compare(a,b):
-    a1stBox=1
-    a2ndBox=2
     if a<b:
         a1stBox=a
         a2ndBox=b
