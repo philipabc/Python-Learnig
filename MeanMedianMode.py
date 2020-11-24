@@ -34,6 +34,30 @@ elif hi=="median" or hi=="Median":
         almstdne3=length2//2
         total=(median[almstdne2]+median[almstdne3])/2
         print("the median of that str is",total)
+elif hi=="mode" or hi=="Mode":
+    mode=[]
+    number3=(int(input("Please tpye how many numbers your going to type in: ")))
+    for i in range(0,number3,1):
+        mode.append(int(input("now please type the numbers you want to find out the mean of: ")))
+    length=len(mode)
+    for b in range(number3):
+        for k in range(b+1,number3):
+            if mode[b]>mode[k]:
+                tmp=mode[b]
+                mode[b]=mode[k]
+                mode[k]=tmp
+                print(mode)
+    for b in range(number3):
+        count=1
+        for k in range(b+1,number3):
+            if mode[b]==mode[k]:  
+                count+=1
+                b+=1
+            else:
+                break
+        print(count)
+            
+            
 else:
     print("Invalid Word!")
         

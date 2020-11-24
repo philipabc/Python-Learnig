@@ -1,27 +1,49 @@
+from randomlist import randomlist
+print(randomlist(10))
+
+mode=[1,2,3,4,4,1,1,3,4,2,5,6]
+
+# sort the list
+length=len(mode)
+for b in range(length):
+    for k in range(b+1,length):
+        if mode[b]>mode[k]:
+            tmp=mode[b]
+            mode[b]=mode[k]
+            mode[k]=tmp
+print(mode)
+
+# find the number of occurence
+current=0
+dic={}
+count=1
+for k in range(1,length):
+    if mode[k]==mode[current]:  
+        count+=1
+    else:
+        dic[mode[current]]=count    
+        if k==length-1:
+            dic[mode[k]]=1
+        else:
+            count=1
+            mode[current]=mode[k]
+print(dic)
+
+# get the mode of list---2 steps
+valuesList=list(dic.values())
+print(valuesList)
+max=valuesList[0]
+# step 1: get the max of values
+for v in valuesList:
+    if max<v:
+        max=v
+print(max)
+# step 2: get the keys of max
+modes=[]
+for (k,v) in dic.items():
+    if v==max:
+        modes.append(k)
+print(modes)
+        
 
 
-hi=input("Please type which do you want to pick mean,median or mode? ") #"median" # 
-if hi=="median" or hi=="Median":
-    median=[]
-    number2=(int(input("Please type how many numbers your going to type in: ")))
-    for e in range(0,number2,1):
-        median.append(int(input("now please type the numbers you want to find out the median of: ")))
-    length2=len(median)
-for t in range(number2):
-    for g in range(t+1,number2):
-        if median[t]>median[g]:
-            tmp=median[t]
-            median[t]=median[g]
-            median[g]=tmp
-            print(median)
-            
-if length2%2==1:
-    almstdne=length2//2
-    print("The median of that str is",median[almstdne])
-elif length2%2==0:
-    almstdne2=length2//2-1
-    almstdne3=length2//2
-    total=(median[almstdne2]+median[almstdne3])/2
-    print("the median of that str is",total)
-    
-    
