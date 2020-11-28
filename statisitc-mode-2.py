@@ -1,18 +1,24 @@
 from randomlist import randomlist
+
 # print(randomlist(10))
 
-mode=[1,2,3,4,4,1,1,1,1,1,3,4,2,4,4,5,5,5,5,5,5,6,0,-1,-1]
+sample=[1,2,3,4,4,1,1,1,1,1,3,4,2,4,4,5,5,5,5,5,5,6,0,-1,-1]
 
 # find the number of occurence for every number: make a map, use set as the key of the map
-map=dict()
-keys=set(mode)
-for k in keys:
-    count=0
-    for h in mode:
-        if k==h:
-            count+=1
-            map[k]=count
-print(map)
+
+def makeMap(mode):
+    map=dict()
+    keys=set(mode)
+    for k in keys:
+        count=0
+        for h in mode:
+            if k==h:
+                count+=1
+                map[k]=count
+    print(map)
+    return map
+
+map = makeMap(sample)
 
 # get the mode of list---2 steps
 valuesList=list(map.values())
