@@ -26,7 +26,7 @@ for k in range(1,length):
         count=1
         current=k  
     if k==length-1:
-            map[mode[k]]=count
+        map[mode[k]]=count
 
 print(map)
 # get the mode of list---2 steps

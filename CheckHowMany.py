@@ -21,7 +21,7 @@ for k in keys:
             count+=1
             map[k]=count
             
-
+#%%
 # print(map)
 # map[10]=100
 # print(map)
@@ -30,3 +30,4 @@ for k in keys:
 # hi=tuple(hi)
 # print(hi)
 
+#%%
