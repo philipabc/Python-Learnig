@@ -30,5 +30,3 @@ for k in keys:
 # hi=tuple(hi)
 # print(hi)
 
-hi[20]=3
-print(hi)
