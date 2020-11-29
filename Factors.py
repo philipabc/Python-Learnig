@@ -1,4 +1,5 @@
 import sys
+
 number=int(input("Please inout the number that will be factorized: "))
 next=1
 prev=number

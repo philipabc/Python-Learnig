@@ -38,7 +38,7 @@ elif hi=="mode" or hi=="Mode":
     mode=[]
     number3=(int(input("Please tpye how many numbers your going to type in: ")))
     for i in range(0,number3,1):
-        mode.append(int(input("now please type the numbers you want to find out the mean of: ")))
+        mode.append(int(input("now please type the numbers you want to find out the mode of: ")))
     length=len(mode)
     for b in range(number3):
         for k in range(b+1,number3):
@@ -47,17 +47,37 @@ elif hi=="mode" or hi=="Mode":
                 mode[b]=mode[k]
                 mode[k]=tmp
                 print(mode)
-    for b in range(number3):
-        count=1
-        for k in range(b+1,number3):
-            if mode[b]==mode[k]:  
-                count+=1
-                b+=1
-            else:
-                break
-        print(count)
-            
-            
+    # find the number of occurence for every items
+    current=0
+    map={}
+    count=1
+    for k in range(1,length):
+        if mode[k]==mode[current]:  
+            count+=1
+        else:
+            b=mode[current]
+            map[b]=count    
+            count=1
+            current=k
+        if k==length-1:
+            map[mode[k]]=count
+    print(map)
+
+    # get the mode of list---2 steps
+    valuesList=list(map.values())
+    print(valuesList)
+    max=valuesList[0]
+    # step 1: get the max of values
+    for v in valuesList:
+        if max<v:
+            max=v
+    # step 2: get the keys of max
+    modes=[]
+    for (k,v) in map.items():
+        if v==max:
+            modes.append(k)
+    print("The mode(s) of your str is ",modes)
+
 else:
     print("Invalid Word!")
         
