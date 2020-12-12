@@ -1,48 +1,13 @@
-from randomlist import randomlist
-# print(randomlist(10))
-
-mode=[1,2,3,4,4,1,1,3,4,2,4,4]
-
-# sort the list
-length=len(mode)
-for b in range(length):
-    for k in range(b+1,length):
-        if mode[b]>mode[k]:
-            tmp=mode[b]
-            mode[b]=mode[k]
-            mode[k]=tmp
-print(mode)
-
-# find the number of occurence for every items
-current=0
-map={}
-count=1
-for k in range(1,length):
-    if mode[k]==mode[current]:  
-        count+=1
-    else:
-        b=mode[current]
-        map[b]=count  
-        count=1
-        current=k  
-    if k==length-1:
-            map[mode[k]]=count
-
-print(map)
-# get the mode of list---2 steps
-valuesList=list(map.values())
-print(valuesList)
-max=valuesList[0]
-# step 1: get the max of values
-for v in valuesList:
-    if max<v:
-        max=v
-# step 2: get the keys of max
-modes=[]
-for (k,v) in map.items():
-    if v==max:
-        modes.append(k)
-print("The mode(s) of your str is",modes)
-        
-
-
+import sys
+x=0
+while(True):
+    x=x+1
+    if ((x*2)-7)%3==0:
+        print(f'x={x}, y={((x*2)-7)/3}')
+        y=((x*2)-7)/3
+        if (2*x)-(y*3)==7:
+            x2=x*2
+            y2=y*3
+            print(2*x,"-",3*y,"=7")
+            if x==100 or x>100:
+                sys.exit()

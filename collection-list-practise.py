@@ -1,3 +1,4 @@
+#%%
 a=[]
 print(f'{a=} {type(a)=}')
 
@@ -15,3 +16,5 @@ print(f'{a=} {type(a)=}')
 
 # https://note.nkmk.me/en/python-list-clear-pop-remove-del/
 # https://note.nkmk.me/en/python-list-append-extend-insert/
+
+# %%

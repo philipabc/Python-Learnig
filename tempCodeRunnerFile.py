@@ -1,0 +1,1 @@
+print(f'line 101: {str1."apple"=}') # this is wrong!!!!!
