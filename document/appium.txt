@@ -10,6 +10,7 @@ path: C:\Program Files\Java\jdk-15.0.1\bin;
 path: C:\Users\www\AppData\Local\Android\Sdk\tools\bin
 path: C:\Users\www\AppData\Local\Android\Sdk\tools
 path: C:\Users\www\AppData\Local\Android\Sdk\platform-tools
+
 path: C:\Program Files\nodejs\node_modules\npm\bin
 path: C:\Users\www\AppData\Roaming\npm
 path: C:\Users\www\AppData\Local\Android\Sdk\emulator
