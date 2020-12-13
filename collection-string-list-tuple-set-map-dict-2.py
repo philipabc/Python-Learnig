@@ -98,8 +98,9 @@ print(f'{str1=}')
 print(f'{str2=}')
 str1['apple'] = 9  # can be change -->U
 print(f'line 100: {str1["apple"]=}') 
-print(f'line 101: {str1.apple=}') # this is wrong!!!!!
-print(f'line 101: {str1."apple"=}') # this is wrong!!!!!
+# print(f'line 100: {str1['apple']=}') 
+# print(f'line 101: {str1.apple=}') # this is wrong!!!!!
+# print(f'line 101: {str1."apple"=}') # this is wrong!!!!!
 print(f'{str1=}')
 del str1['apple']  #delete --> D
 print(f'{str1=}')

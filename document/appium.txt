@@ -1,0 +1,19 @@
+安装android studio
+在android studio的tool菜单的AVD中create a emulator
+在command prompt中运行emulator,它的目录是：C:\Users\www\AppData\Local\Android\Sdk\emulator，命令是： emulator -avd name_emulator
+安装appium: npm appium
+启动appium server: 路径是C:\Users\www\AppData\Roaming\npm appium
+在eclipse中写client端测试程序（可以多种语言：Java、C#、Python和Ruby）
+
+要设置的路径环境变量：
+path: C:\Program Files\Java\jdk-15.0.1\bin;
+path: C:\Users\www\AppData\Local\Android\Sdk\tools\bin
+path: C:\Users\www\AppData\Local\Android\Sdk\tools
+path: C:\Users\www\AppData\Local\Android\Sdk\platform-tools
+path: C:\Program Files\nodejs\node_modules\npm\bin
+path: C:\Users\www\AppData\Roaming\npm
+path: C:\Users\www\AppData\Local\Android\Sdk\emulator
+
+ANDROID_HOME: C:\Users\www\AppData\Local\Android\Sdk
+JAVA_HOME: C:\Program Files\Java\jdk-15.0.1
+NODE_HOME: C:\Program Files\nodejs
