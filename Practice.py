@@ -10,4 +10,5 @@ while(True):
             y2=y*3
             print(2*x,"-",3*y,"=7")
             if x==100 or x>100:
-                sys.exit()
+                # sys.exit()
+                exit()
