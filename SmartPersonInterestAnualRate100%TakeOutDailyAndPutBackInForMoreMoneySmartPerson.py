@@ -3,8 +3,8 @@ print(
     '''I will give you 100% rate annual but you decide to come 
 everyday to get your money and take the money
 and put it back in i will you how much you are going to get''')
-n=int(input("w and p times:"))
-m=500000000
+n=int(input("withdraw and deposit of times:"))
+m=5000
 n=m*n
 r=100/100    #annual interest rate
 r=r/n     #interest rate for every period
@@ -12,6 +12,7 @@ p=1
 t=1
 x=0
 money=1
+import time
 print(f'{(start:=time.time())=}')
 print(time.ctime())
 while True:
@@ -44,7 +45,7 @@ print(f'day={x}, {money=}')
 # money=p(1+rt)
 
 # day5:
-# money=p(1+rt)^5
+# money=p(1+rt)^5   # here P is the initial principal, it is not the recursive principal
 
 
 
