@@ -1,7 +1,8 @@
 import time
 from datetime import datetime
+
 start=time.time()
-time.sleep(1)
+time.sleep(4)
 stop=time.time()
 
 diff=stop-start
@@ -29,4 +30,4 @@ print(a,b,a-b)
 c=time.ctime()
 print(c)
 print(d:=c.split(' '))
-print(d[i] for i in range(len(d)))
+print([d[i] for i in range(len(d))])
