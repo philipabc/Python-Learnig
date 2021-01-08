@@ -20,4 +20,4 @@ for j in range(len(list2)):
     total+=list2[j]
 mean2=math.sqrt(total/len(list2))
 print(mean2)
-print(math.sqrt(2))
+# print(math.sqrt(2))
