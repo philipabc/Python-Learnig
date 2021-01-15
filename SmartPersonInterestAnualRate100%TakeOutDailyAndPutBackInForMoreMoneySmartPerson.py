@@ -24,7 +24,7 @@ while True:
     if x==n:
         break
 # print(money)    
-print(f'{(stop:=time.time())=}')
+print(f'{(stop:=time.time())=}')  
 print(f'{((stop-start)//60)=} minutes')
 print(f'day={x}, {money=}')
     
@@ -34,7 +34,7 @@ print(f'day={x}, {money=}')
 
 # day2:
 # p=money
-# money=p(1+rt)
+# money=p(1+rt)   
 
 # day3:
 # p=money
@@ -48,9 +48,15 @@ print(f'day={x}, {money=}')
 # money=p(1+rt)^5   # here P is the initial principal, it is not the recursive principal
 
 
+def money(p=1,r=1,t=1):
+    return p*(1+r*t)
 
-
-
+def compound(times,p=1,annualRate=1,Period=1):
+    if times==1:
+        return money(p,annualRate,Period)
+    else:
+        r=annualRate/times
+        p=money(p,annualRate,Period)
 
 
 

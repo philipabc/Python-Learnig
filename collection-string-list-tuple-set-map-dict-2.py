@@ -1,3 +1,7 @@
+# unique/repeatable
+# changeable
+# unsortable
+
 #%%
 print("\n------- string ----------\n")
 str0 = ''                   # create ---> C
