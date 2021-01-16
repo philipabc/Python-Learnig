@@ -11,7 +11,7 @@ root_size=10000
 numOfGroups=1    # how many groups/nodes for any layer
 
 a=root_size      # root size  
-groupSize=a      # the group size for any layer(node size)
+groupSize=a      # the group size(node size) for any layer
 b=6              # base
 x=0              # layer/exponent/log
 while True:
