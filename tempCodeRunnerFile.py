@@ -1,1 +1,2 @@
-print(f'line 101: {str1."apple"=}') # this is wrong!!!!!
+import time
+print(time.time())

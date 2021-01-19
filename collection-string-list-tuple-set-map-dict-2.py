@@ -1,3 +1,7 @@
+# unique/repeatable
+# changeable
+# unsortable
+
 #%%
 print("\n------- string ----------\n")
 str0 = ''                   # create ---> C
@@ -98,7 +102,7 @@ print(f'{str1=}')
 print(f'{str2=}')
 str1['apple'] = 9  # can be change -->U
 print(f'line 100: {str1["apple"]=}') 
-# print(f'line 100: {str1['apple']=}') 
+print(f'line 100: {str1['apple']=}') 
 # print(f'line 101: {str1.apple=}') # this is wrong!!!!!
 # print(f'line 101: {str1."apple"=}') # this is wrong!!!!!
 print(f'{str1=}')
